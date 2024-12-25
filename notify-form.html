@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notify Me Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Logo -->
+    <div class="absolute top-8 left-1/2 transform -translate-x-1/2">
+        <img src="/images/almehn-logo.png" alt="ALMEHN Logo" class="h-16">
+    </div>
+    <!-- Form Container -->
+    <div class="h-screen flex justify-center items-center">
+        <form action="https://formsubmit.co/contact@almehn.com" method="POST" class="w-full max-w-md p-6 bg-white shadow-lg rounded-lg">
+            <h2 class="text-3xl font-semibold text-gray-900 text-center mb-4">Stay Informed – Join Our VIP List!</h2>
+            <p class="text-gray-700 mt-2 text-center">Sign up below to receive launch updates and exclusive offers.</p>
+
+            <div class="mt-6">
+                <label for="name" class="block text-gray-600 font-medium">Your Name</label>
+                <input type="text" id="name" name="name" required aria-label="Your name"
+                    class="mt-2 px-4 py-2 w-full border rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-600">
+            </div>
+
+            <div class="mt-4">
+                <label for="email" class="block text-gray-600 font-medium">Your Email</label>
+                <input type="email" id="email" name="email" required aria-label="Your email"
+                    class="mt-2 px-4 py-2 w-full border rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-600">
+            </div>
+
+            <input type="hidden" name="_subject" value="New Notify Me Submission">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Redirect to index page after submission -->
+            <input type="hidden" name="_redirect" value="/index.html">
+
+            <div class="mt-6 text-center">
+                <button type="submit"
+                    class="px-6 py-2 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">Submit</button>
+            </div>
+
+            <div class="mt-4 text-center text-sm text-gray-600">
+                <p>By signing up, you agree to our <a href="/privacy-policy" class="text-purple-600 hover:underline">Privacy Policy</a>.</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
