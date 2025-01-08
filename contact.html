@@ -12,13 +12,13 @@
         --accent-green: #4caf50; /* Emerald Green */
         --accent-yellow: #fbc02d; /* Golden Yellow */
         --background-beige: #e9dac6; /* Soft Beige */
-        --accent-blue: #039be5; /* Azure Blue */  
+        --accent-blue: #039be5; /* Azure Blue */
       }
     </style>
   </head>
   <body class="bg-[var(--background-beige)] text-[var(--secondary-color)]">
     <!-- Header Section -->
-    <header class="bg-white shadow-md fixed w-full z-50">
+    <header class="bg-white shadow-md w-full z-50">
       <div
         class="container mx-auto px-6 py-4 flex items-center justify-between"
       >
@@ -29,64 +29,44 @@
             alt="company logo"
             width="150"
         /></a>
-
-        <!-- Navigation Menu -->
-        
-
-        <!-- Call to Action -->
-        <a
-          href="/contact.html"
-          class="hidden md:inline-block px-6 py-2 bg-[#017ebc] text-white rounded-lg hover:bg-[#135272]"
-          >Contact</a
-        >
-
-        <!-- Mobile Menu Icon -->
-        <button class="md:hidden text-gray-600 focus:outline-none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section
-      class="h-screen flex flex-col justify-center items-center bg-gradient-to-b from-white to-[var(--background-beige)]"
+      class="h-screen flex flex-col items-center justify-start bg-gradient-to-b from-white to-[var(--background-beige)]"
     >
-      <h1
-        class="text-4xl md:text-6xl font-extrabold text-[var(--primary-color)] text-center"
-      >
-      <span class="block text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-blue)] text-transparent bg-clip-text">
-        Transforming Workspaces,<br />
-        Elevating Experiences</span>
-      </h1>
-      <p class="mt-4 text-lg text-[var(--secondary-color)] text-center">
-        ALMEHN specializes in innovative office renovations and designs.
-        Launching soon!
-      </p>
-
-      <a
-        href="notify-form.html"
-        class="mt-8 px-6 py-3 bg-[#017ebc] text-white rounded-lg shadow-lg hover:bg-[#135272] transition-colors duration-300"
-        >Notify Me When We Launch</a
-      >
+      <div class="mt-12 mb-4">
+        <h1
+          class="text-4xl md:text-4xl font-extrabold text-[var(--primary-color)] text-center"
+        >
+          <span
+            class="block text-4xl md:text-4xl font-extrabold bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-blue)] text-transparent bg-clip-text"
+            >Contact form</span
+          >
+        </h1>
+      </div>
+      <div class="container w-full md:w-3/4">
+        <script
+          charset="utf-8"
+          type="text/javascript"
+          src="//js.hsforms.net/forms/embed/v2.js"
+        ></script>
+        <script>
+          hbspt.forms.create({
+            portalId: "48826393",
+            formId: "e813b426-b2a2-4bf8-9719-2b3b7bcf191c",
+          });
+        </script>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section class="py-16 bg-white">
       <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-[var(--primary-color)]">
+        <h2
+          class="block text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-blue)] text-transparent bg-clip-text"
+        >
           Our Expertise at a Glance
         </h2>
         <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -166,6 +146,5 @@
         </div>
       </div>
     </footer>
-    
   </body>
 </html>
