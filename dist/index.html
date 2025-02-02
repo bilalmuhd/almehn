@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALMEHN</title>
+    <!-- CSS -->
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <!--  FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" crossorigin href="/almehn/assets/index-Ci8GReyH.css">
+  </head>
+  <body class="bg-gray-100">
+    <!-- HEADER -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!-- logo -->
+        <a href="#">
+          <img
+            src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20data-name='Layer%202'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20366.546%2040.143'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20url(%23linear-gradient);%20}%20.cls-1,%20.cls-2%20{%20stroke:%20%231c75bc;%20stroke-miterlimit:%2010;%20stroke-width:%202px;%20}%20.cls-2%20{%20fill:%20%231c75bc;%20}%20%3c/style%3e%3clinearGradient%20id='linear-gradient'%20x1='228.855'%20y1='20.787'%20x2='229.355'%20y2='20.787'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0'%20stop-color='%231c75bc'/%3e%3cstop%20offset='.024'%20stop-color='%2342839d'/%3e%3cstop%20offset='.058'%20stop-color='%23739477'/%3e%3cstop%20offset='.094'%20stop-color='%239da456'/%3e%3cstop%20offset='.13'%20stop-color='%23c0b03b'/%3e%3cstop%20offset='.166'%20stop-color='%23daba26'/%3e%3cstop%20offset='.203'%20stop-color='%23edc117'/%3e%3cstop%20offset='.241'%20stop-color='%23f9c50e'/%3e%3cstop%20offset='.281'%20stop-color='%23fdc70c'/%3e%3cstop%20offset='.669'%20stop-color='%23f3903f'/%3e%3cstop%20offset='.888'%20stop-color='%23ed683c'/%3e%3cstop%20offset='1'%20stop-color='%23e93e3a'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20id='Layer_1-2'%20data-name='Layer%201'%3e%3cpath%20class='cls-1'%20d='M43.786,24.733l8.558,12.256-2.473,1.754-7.628-10.976H11.487l-7.627,10.976-2.473-1.754,8.539-12.256h33.859ZM35.124,14.913h-16.167L27.041,2.832l8.083,12.082ZM24.831,11.88h4.436l-2.227-3.84-2.209,3.84Z'/%3e%3cpath%20class='cls-2'%20d='M65.412,1.85v32.755h49.063v3.156h-52.219V1.85h3.156Z'/%3e%3cpath%20class='cls-2'%20d='M175.872,15.106v23.637h-2.963v-18.974l-22.304,10.433-22.305-10.433v18.974h-2.963V15.106l25.268,11.817,25.267-11.817ZM175.013,5.514l-24.408,11.433-24.409-11.433,1.245-2.683,23.164,10.836,23.146-10.836,1.262,2.683Z'/%3e%3cpath%20class='cls-2'%20d='M240.166,2.113v3.139h-48.518v10.977h40.154v3.122h-43.276V2.113h51.64ZM192.897,34.902h47.444v3.122h-51.641v-13.922h4.197'/%3e%3cpath%20class='cls-2'%20d='M307.615,1.394l.019,12.52h-54.622l-.018-12.52h3.209l.018,9.311h48.204l-.018-9.311h3.207ZM307.635,23.681l.018,13.624h-3.209l-.018-10.416h-48.204l.018,10.416h-3.209l-.018-13.624h54.622Z'/%3e%3cpath%20class='cls-2'%20d='M362.846,30.168V2.481h2.7v32.86l-45.24-31.738,1.544-2.209,40.996,28.773ZM321.85,14.861l29.458,20.234-1.543,2.21-25.232-17.273v16.186h-2.683V14.861Z'/%3e%3c/g%3e%3c/svg%3e"
+            alt="logo"
+            height="40px"
+            width="160px"
+          />
+        </a>
+        <!-- NAV -->
+        <nav>
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-fill text-4xl text-primary"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- page wrapper -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+      <!-- grid img -->
+      <div
+        class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      ></div>
+
+      <!-- HERO -->
+      <section
+        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
+      >
+        <div
+          class="container mx-auto h-full flex items-center justify-center xl:justify-start"
+        >
+          <!-- text -->
+          <div
+            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
+          >
+            <h1
+              class="h1 text-[#B08D57] mb-8 drop-shadow-[10px_10px_10px_rgba(211,187,160,1)]"
+            >
+              Revolutionizing Workspaces, Redefining Possibilities
+            </h1>
+            <p
+              class="mb-8 text-[#F5F5F5] !drop-shadow-[10px_10px_2 0px_rgba(0, 0, 0, 0.8)]"
+            >
+              At Almehn, we don't just build offices we craft environments that
+              inspire innovation, enhance productivity, and reflect your brand's
+              vision. Get ready for a workspace transformation like never
+              before.
+            </p>
+
+            <button class="btn btn-primary mx-auto xl:mx-0">
+              Get Started
+              <i class="ri-arrow-right-line text-accent"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEPS -->
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <!-- grid items -->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <!-- step 1 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-compasses-2-fill text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Discovery & Consultation</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                We begin by understanding your vision, needs, and challenges to
+                create a tailored workspace solution.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 2 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-pencil-ruler-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Concept & Design</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                Our expert designers craft innovative layouts and visuals that
+                align with your brand identity and functionality goals.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 3 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-calendar-check-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Planning & Coordination</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                We meticulously plan every detail, ensuring a smooth workflow,
+                optimized timelines, and minimal disruptions.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 4 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-tools-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Execution & Build</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                Our skilled team brings the vision to life, executing fit-outs,
+                installations, and upgrades with precision and quality.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 5 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-shake-hands-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Handover & Support</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                Your transformed space is ready! We ensure a flawless handover
+                and provide ongoing support for any future needs.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+          <div
+            class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"
+          >
+            <!-- text -->
+            <div
+              class="about__text flex-1 order-2 xl:order-none max-w-xl xl:max-w-[610px] flex flex-col items-center xl:items-start gap-8"
+            >
+              <h2 class="h2">Innovating Workspaces, Elevating Experiences</h2>
+              <p>
+                At Almehn, we believe that every workspace has the potential to
+                inspire productivity and success. Since 2016, we have been
+                transforming offices with cutting-edge renovation, fit-outs, and
+                design solutions. Our expertise spans civil and MEP works,
+                networking and cabling, bespoke furniture, and meticulous space
+                planning. Driven by innovation and excellence, we partner with
+                businesses to create work environments that are functional,
+                aesthetic, and built for growth. Whether it's a modern office
+                upgrade or a complete transformation, Almehn delivers seamless
+                execution with a commitment to quality and client satisfaction.
+              </p>
+              <!-- contact phone -->
+              <div
+                class="flex items-center justify-center xl:justify-start gap-4"
+              >
+                <div
+                  class="bg-accent/15 w-[93px] h-[93px] rounded-full flex justify-center items-center"
+                >
+                  <i class="ri-phone-fill text-accent text-4xl"></i>
+                </div>
+                <div class="text-left">
+                  <div class="text-2xl font-bold">+971 56 9143164</div>
+                  <div>Call us</div>
+                </div>
+              </div>
+              <button class="btn btn-primary">
+                Get free estimate
+                <i class="ri-arrow-right-line text-accent"></i>
+              </button>
+            </div>
+
+            <!-- image -->
+            <div
+              class="about__img order-1 xl:order-none max-w-[453px] mx-auto xl:max-w-none xl:mx-0"
+            >
+              <img
+                class="rounded-bl-[290px]"
+                src="/almehn/assets/office_design_3-_CnQI-uV.jpg"
+                alt="About"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonial mt-[80px] xl:mt-[200px] relative z-20">
+        <div
+          class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
+        >
+          <div class="flex flex-col items-center pt-[88px] pb-[110px]">
+            <h2 class="testimonial__title h2 mb-9 text-center">
+              What clients say
+            </h2>
+            <!-- slider -->
+            <div class="w-full">
+              <div class="testimonial__slider swiper h-[400px]">
+                <div class="swiper-wrapper">
+                  <!-- slide 1 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[20px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="/almehn/assets/01-BNdB6lmU.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Sherin Ralph</h3>
+                          <div>Dubai, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide 2 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="/almehn/assets/02-Cr8kEhzd.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Marianne Habib</h3>
+                          <div>Nshama, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide 3 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="/almehn/assets/03-CeP5kIRV.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Afzal Khan</h3>
+                          <div>Media City, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide 4 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="/almehn/assets/04-BL2DQvCG.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Maricar B. Tolero</h3>
+                          <div>Internet City, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- swiper pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRANDS -->
+      <section class="brands mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto">
+          <div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-6 gap-12 justify-center items-center">
+            <img class="brands__img" src="/almehn/assets/01-CcIO62dE.svg" alt="clients" />
+            <img class="brands__img" src="/almehn/assets/02-BzzPfqnb.svg" alt="clients" />
+            <img class="brands__img" src="data:image/svg+xml,%3csvg%20width='164'%20height='44'%20viewBox='0%200%20164%2044'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M35.3999%2043.5479H8.58166C4.17451%2043.5479%200.602783%2039.9762%200.602783%2035.569V8.7508C0.602783%204.34365%204.17451%200.771912%208.58166%200.771912H35.3999C39.8071%200.771912%2043.3788%204.34365%2043.3788%208.7508V35.569C43.3788%2039.9762%2039.8071%2043.5479%2035.3999%2043.5479Z'%20fill='%23292F36'/%3e%3cpath%20d='M29.6972%2022.5534C30.46%2023.5099%2030.8475%2024.6238%2030.8475%2025.883C30.8475%2027.7354%2030.23%2029.1883%2028.995%2030.2175C27.76%2031.2466%2025.9923%2031.7794%2023.6919%2031.7794H13.6426V10.1674H23.4497C25.6533%2010.1674%2027.3484%2010.6517%2028.547%2011.6082C29.7457%2012.5647%2030.3511%2013.9328%2030.3511%2015.7005C30.3511%2017.0081%2030%2018.0857%2029.3098%2018.9575C28.6197%2019.8292%2027.7116%2020.3861%2026.5856%2020.6525C27.9053%2020.9673%2028.9345%2021.5969%2029.6972%2022.5534ZM18.861%2019.0059H22.2874C24.1036%2019.0059%2025.0116%2018.231%2025.0116%2016.6812C25.0116%2015.1315%2024.0793%2014.3566%2022.2269%2014.3566H18.861V19.0059ZM25.4959%2025.1565C25.4959%2024.3816%2025.2417%2023.7763%2024.7332%2023.3404C24.2246%2022.9045%2023.4982%2022.6866%2022.5659%2022.6866H18.8731V27.5417H22.6022C24.5273%2027.5296%2025.4959%2026.7426%2025.4959%2025.1565Z'%20fill='white'/%3e%3cpath%20d='M68.163%2031.7794L63.4894%2023.6189H62.3029V31.7794H57.0725V10.1674H65.9957C67.7029%2010.1674%2069.1558%2010.4579%2070.3303%2011.0512C71.5168%2011.6445%2072.4006%2012.4557%2072.9939%2013.4848C73.5872%2014.514%2073.8778%2015.6884%2073.8778%2017.0202C73.8778%2018.5942%2073.4419%2019.9261%2072.5822%2021.0278C71.7105%2022.1296%2070.4634%2022.8803%2068.8047%2023.292L73.9383%2031.7915H68.163V31.7794ZM62.3029%2020.0471H65.5356C66.5769%2020.0471%2067.3397%2019.8171%2067.824%2019.357C68.3083%2018.8969%2068.5625%2018.2189%2068.5625%2017.3229C68.5625%2016.4633%2068.3083%2015.7974%2067.8119%2015.301C67.3154%2014.8167%2066.5527%2014.5624%2065.5356%2014.5624H62.3029V20.0471Z'%20fill='%23292F36'/%3e%3cpath%20d='M97.5359%2027.8444H89.436L88.092%2031.7915H82.5952L90.5135%2010.3369H96.531L104.449%2031.7915H98.892L97.5359%2027.8444ZM96.192%2023.861L93.5041%2015.9184L90.7799%2023.861H96.192Z'%20fill='%23292F36'/%3e%3cpath%20d='M133.302%2031.7794H128.071L119.33%2018.5095V31.7794H114.099V10.1674H119.33L128.071%2023.5583V10.1674H133.302V31.7794Z'%20fill='%23292F36'/%3e%3cpath%20d='M162.626%2026.5731C161.718%2028.2077%20160.411%2029.4911%20158.715%2030.4112C157.008%2031.3314%20155.011%2031.7915%20152.71%2031.7915H144.55V10.1795H152.71C155.035%2010.1795%20157.045%2010.6275%20158.728%2011.5234C160.423%2012.4194%20161.718%2013.6786%20162.626%2015.3131C163.534%2016.9476%20163.982%2018.8122%20163.982%2020.9431C163.982%2023.0498%20163.522%2024.9265%20162.626%2026.5731ZM156.996%2025.4835C158.122%2024.4059%20158.691%2022.8803%20158.691%2020.931C158.691%2018.9696%20158.122%2017.4562%20156.996%2016.3786C155.87%2015.301%20154.284%2014.7562%20152.238%2014.7562H149.768V27.1059H152.238C154.284%2027.1059%20155.87%2026.5731%20156.996%2025.4835Z'%20fill='%23292F36'/%3e%3c/svg%3e" alt="clients" />
+            <img class="brands__img" src="/almehn/assets/04-B9WD6iE6.svg" alt="clients" />
+            <img class="brands__img" src="/almehn/assets/05-C0hEpqAn.svg" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20width='1617px'%20height='321px'%20viewBox='0%200%201617%20321'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3c!--%20Generator:%20Sketch%2053.2%20(72643)%20-%20https://sketchapp.com%20--%3e%3ctitle%3eShape%3c/title%3e%3cdesc%3eCreated%20with%20Sketch.%3c/desc%3e%3cg%20id='Page-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cpath%20d='M234.9,288.4%20L230.1,320.2%20L0.5,320.2%20C10,298.2%209.4,285.8%209.4,269.9%20L9.4,51.3%20C9.4,35.9%2010,22.4%200.5,1%20L69.3,1%20L224.5,1%20L224.9,33.4%20C220.7,31.7%20217.3,30.2%20214.2,28.8%20C205.9,25.7%20195.4,22.8%20184.5,22.9%20C167.1,22.9%2094.1,22.9%2061.7,22.9%20L61.7,147.9%20L205.8,147.9%20L198.7,172.5%20L61.7,172.5%20L61.7,297.6%20C88.2,297.6%20172.9,297.6%20191.6,297.6%20C213.5,298%20235.3,285.6%20235.3,285.6%20L234.7,288.3%20C234.7,288.4%20234.8,288.4%20234.9,288.4%20Z%20M580.5,320.2%20C583.6,304.5%20583.6,282.3%20581.1,264.2%20L560.7,113.8%20L449.3,320.1%20L428.1,320.1%20L314.9,104.5%20L292.9,267.5%20C290.5,286.3%20289.8,310.1%20291.8,320.2%20L252,320.2%20C259.7,303.9%20261.6,296.8%20265.2,270%20L301.2,1%20L319.5,1%20L451.6,252%20L583.6,1%20L597.4,1%20L634.6,269.4%20C638.3,296.1%20641.1,303.8%20648.5,320.2%20L580.5,320.2%20Z%20M915.8,320.2%20L862.8,203.3%20L756.2,203.3%20L703.9,320.2%20L699.4,320.2%20L662.5,320.2%20L662.3,320.2%20C675.5,303.8%20680,296.2%20689.3,275.8%20L812.9,1%20L826.8,1%20L948.4,268.1%20C961.4,294.2%20967.5,302.3%20986.1,320.2%20L915.8,320.2%20Z%20M1249.3,320.2%20L1196.3,203.3%20L1089.7,203.3%20L1037.4,320.2%20L1033,320.2%20L996,320.2%20L995.8,320.2%20C1009,303.8%201013.5,296.2%201022.8,275.8%20L1146.4,1%20L1160.3,1%20L1282,268.1%20C1295,294.2%201301.1,302.3%201319.7,320.2%20L1249.3,320.2%20Z%20M1551.5,320.4%20C1519.6,291.3%201478.3,252.7%201426.6,191.5%20C1411.8,174.2%201401.4,172%201394.7,171.6%20L1394.7,269.9%20C1394.7,285.7%201394.7,298.2%201403.7,320.2%20L1333.5,320.2%20C1343,298.2%201342.4,285.8%201342.4,269.9%20L1342.4,51.1%20C1342.4,35.7%201343,22.2%201333.5,0.8%20L1402.3,0.8%20C1449.3,0.8%201560.4,-3.4%201560.4,88.4%20C1560.4,136.9%201521.9,163%201476.7,169.6%20L1463.3,170.9%20C1463.3,170.9%201609.9,314.2%201616.2,320.4%20L1551.5,320.4%20Z%20M1468.4,151.3%20L1468.3,151.4%20C1497.9,140.2%201507.9,112.1%201506.9,88.3%20C1505.8,65.4%201495.5,15.6%201394.8,19.6%20L1394.8,155.7%20C1394.8,155.7%201451.2,158.8%201467,151.9%20C1467.9,151.5%201468.4,151.3%201468.4,151.3%20Z%20M1099.9,181%20L1186,181%20L1142.6,85.7%20L1099.9,181%20Z%20M766.5,181%20L852.6,181%20L809.2,85.7%20L766.5,181%20Z'%20id='Shape'%20fill='%233C3D3F'%20fill-rule='nonzero'%3e%3c/path%3e%3c/g%3e%3c/svg%3e" alt="clients" />
+            <img class="brands__img w-40 h-auto" src="/almehn/assets/Atb_color_logo-C_YjtiST.svg" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="data:image/svg+xml,%3csvg%20id='Layer_1'%20data-name='Layer%201'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20122.88%2049.29'%3e%3cdefs%3e%3cstyle%3e.cls-1{fill:%2319aaf8;}.cls-2{fill:%230c1026;}%3c/style%3e%3c/defs%3e%3ctitle%3etelenor%3c/title%3e%3cpath%20class='cls-1'%20d='M27.06,15.09c.76.11.92-.05,1-.76a16.8,16.8,0,0,1,1.5-4.89,15.17,15.17,0,0,1,4.84-5.85A24,24,0,0,1,41.8.42,18.46,18.46,0,0,1,47.16.06c3.24.29,5,1.21,5.92,2.41a2.59,2.59,0,0,1,.51,1.34A2.67,2.67,0,0,1,52.5,5.93a15.57,15.57,0,0,1-5,2.46c-2.5.83-5.91,1.72-9.33,2.5a49.54,49.54,0,0,0-5.83,1.68c-2.25.76-2.92,3-1.52,3.68a20.49,20.49,0,0,1,4.38,2.9A39.54,39.54,0,0,1,41,24.87c2.12,2.59,5.58,7.52,6.83,12.32,1.39,5.27.52,10.28-2.45,11.66s-6.81-.6-9.56-3.44c-2.59-2.68-4.42-5.85-6.12-10.74a47.73,47.73,0,0,1-2.07-13.48c0-1.08,0-1.3,0-2.26s-2.15-1.52-4.58,0c-2.75,1.77-5.45,5-7,6.86-.7.8-1.63,2-2.64,3.26a24.07,24.07,0,0,1-4.09,4.31c-2,1.45-5.18,2-7.41.44A5.27,5.27,0,0,1,0,29.56a6.6,6.6,0,0,1,.87-3.35A16.83,16.83,0,0,1,4.8,21.86,34.6,34.6,0,0,1,13.29,17c4.93-1.94,10.25-2.57,13.77-1.92Z'/%3e%3cpath%20class='cls-2'%20d='M62.84,32.87a2.06,2.06,0,0,1-2.3-2.3V22.11h-1.7c-.15,0-.15-.27-.15-.49s0-.51.15-.51h1.7V18.18c0-.13.38-.13.6-.13s.6,0,.6.13v2.93h2.64c.13,0,.13.24.13.51s0,.49-.13.49H61.74v8.42c0,.94.41,1.29,1.39,1.29h1.23c.15,0,.2.05.2.5s0,.55-.2.55ZM122,22c-1,0-1.81.89-3,2.77v8.08c0,.13-.38.13-.6.13s-.58,0-.58-.13v-12c0-.14.35-.14.58-.14s.56,0,.56.14v2.7c1.33-2,2-2.79,3.39-2.79h.45c.13,0,.13.42.13.65s0,.6-.18.6Zm-16.3,6.81V24.88c0-2.81,1.69-4.35,4.64-4.35S115,22.07,115,24.88v3.91c0,2.79-1.72,4.35-4.69,4.35s-4.64-1.56-4.64-4.35Zm4.64-7.17c-2.14,0-3.44.92-3.44,3.46v3.51c0,2.52,1.3,3.48,3.44,3.48s3.48-.92,3.48-3.48V25.08c0-2.52-1.31-3.46-3.48-3.46ZM102.52,33c-.23,0-.61,0-.61-.13V24.64c0-2-.87-2.91-2.32-2.91s-3,1.32-3.84,2.59v8.51c0,.13-.38.13-.6.13s-.61,0-.61-.13v-12c0-.14.38-.14.61-.14s.58,0,.58.14V23A5.28,5.28,0,0,1,100,20.53c1.94,0,3.17,1.45,3.17,3.57v8.73c0,.13-.38.13-.6.13ZM84,27.43v1.16a3.12,3.12,0,0,0,3.44,3.46,7.07,7.07,0,0,0,3.66-.94c.18-.09.74.87.52,1a8.42,8.42,0,0,1-4.13,1c-3,0-4.69-1.65-4.69-4.46V25a4.26,4.26,0,0,1,4.44-4.46,4.33,4.33,0,0,1,4.58,4.71v2.19Zm6.61-2.3a3.23,3.23,0,0,0-3.37-3.55A3.15,3.15,0,0,0,84,25.06v1.38h6.61V25.13ZM80.23,32.87a2.07,2.07,0,0,1-2.3-2.3V16.28c0-.13.38-.13.61-.13s.6,0,.6.13V30.53c0,.94.42,1.32,1.4,1.32h.61c.15,0,.2,0,.2.49s0,.53-.2.53ZM67.42,27.43v1.16a3.11,3.11,0,0,0,3.43,3.46,7.08,7.08,0,0,0,3.67-.94c.18-.09.73.87.51,1a8.42,8.42,0,0,1-4.13,1c-3,0-4.69-1.65-4.69-4.46V25a4.26,4.26,0,0,1,4.44-4.46,4.33,4.33,0,0,1,4.58,4.71v2.19ZM74,25.13a3.24,3.24,0,0,0-3.38-3.55,3.15,3.15,0,0,0-3.23,3.48v1.38H74V25.13Z'/%3e%3c/svg%3e" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="/almehn/assets/weber-1-5HBYaY1z.svg" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='2500'%20height='2500'%20viewBox='0%200%20192.756%20192.756'%3e%3cg%20fill-rule='evenodd'%20clip-rule='evenodd'%3e%3cpath%20fill='%23fff'%20d='M0%200h192.756v192.756H0V0z'/%3e%3cpath%20fill='%232d509f'%20d='M116.086%2082.314H92.913v7.557h7.745v16.168h7.555V89.871h7.873v-7.557zM138.729%20105.977l-7.303-23.663h-9.196l-7.302%2023.663h7.556l4.344-16.825%204.346%2016.825h7.555zM161.863%2082.314h-23.172v7.557h7.745v16.168h7.554V89.871h7.873v-7.557zM184.252%20105.977l-7.305-23.663h-9.193l-7.305%2023.663h7.559l4.344-16.825%204.343%2016.825h7.557zM36.572%20107.688c1.646-6.992%202.867-13.817%202.867-13.817s.614-2.251-.614-3.786c-1.228-1.535-5.014-1.023-5.014-1.023s-5.881.07-11.875.792c-5.338.644-10.785%201.703-12.793%202.11a15.878%2015.878%200%200%200-.639%204.416c0%2010.535%2010.528%2019.473%2025.144%2022.666.767-2.788%201.92-7.099%202.924-11.358z'/%3e%3cpath%20d='M47.436%20103.287c-.07-8.473.167-16.375.167-16.375s-.272-1.19.487-1.772c.777-.595%202.583-.581%202.583-.581s7.006.197%2014.857%201.204c5.732.737%2011.93%201.919%2014.729%202.478-5.146-9.208-18.774-15.788-34.779-15.788-16.068%200-29.735%206.633-34.835%2015.895%202.454-.494%209.125-1.795%2015.268-2.584%207.851-1.007%2014.855-1.204%2014.855-1.204s1.808-.014%202.584.581c.759.582.487%201.772.487%201.772s.238%207.902.167%2016.375c-.056%206.494-.256%2013.305-.378%2016.986.613.02%201.229.031%201.851.031.784%200%201.561-.021%202.333-.053-.121-3.688-.32-10.484-.376-16.965z'%20fill='%232d509f'/%3e%3cpath%20d='M69.508%2089.853c-5.994-.722-11.876-.792-11.876-.792s-3.785-.511-5.015%201.023c-1.227%201.535-.612%203.786-.612%203.786s1.22%206.825%202.866%2013.817c.991%204.209%202.129%208.467%202.896%2011.258%2014.38-3.277%2024.689-12.143%2024.689-22.566%200-1.546-.235-3.054-.667-4.518-2.318-.463-7.347-1.413-12.281-2.008z'%20fill='%232d509f'/%3e%3c/g%3e%3c/svg%3e" alt="clients" />
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="work mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto xl:!px-0">
+          <!-- text -->
+          <div class="text-center mb-24">
+            <h2 class="work__title h2 mb-4">Follow Our Work</h2>
+            <p class="work__subtitle max-w-3xl mx-auto">
+              At Almehn, we take pride in crafting workspaces that align with
+              our clients' business goals. Whether it's a sleek corporate office
+              or a creative hub, we deliver excellence with every project.
+            </p>
+          </div>
+          <!-- grid -->
+          <div
+            class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
+          >
+            <!-- item 1 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-tr-[80px]" src="https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/eedb5nwwfz0xqz96tin7?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Zenith Tech Solutions</h3>
+                  <p>Smart Office Transformation</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-tl-[80px]" src="https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/j0rmgzin3lmpnyiyniwr?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Al Noor Financial - Premium Corporate Fit-Out</h3>
+                  <p>Finance & Investment</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-br-[80px]" src="http://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/j098ydrwbkw8rk91nkqb?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Skywave Media - Creative Workspace Revamp</h3>
+                  <p>Advertising & Media</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item 4 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-bl-[80px]" src="https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/cqpyckivojxxz3hy0grm?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Blue Horizon Hotels - Hospitality Office Overhaul</h3>
+                  <p>Hospitality & Tourism</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section
+        class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] xl:py-[150px]"
+      >
+        <div class="container mx-auto">
+          <!-- grid -->
+          <div class="grid grid-cols-1 xl:grid-cols-4 gap-12">
+            <!-- grid item -->
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">08</h3>
+              <p>Years Of Experience</p>
+            </div>
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">50+</h3>
+              <p>Successful Projects Completed/p></p>
+            </div>
+
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">95%</h3>
+              <p>Client Satisfaction Rate Based on Feedback</p>
+            </div>
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">20+</h3>
+              <p>Commercial Sectors Served, from Tech to Hospitality</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <section class="news mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto !px-0">
+          <!-- text -->
+          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
+            <h2 class="news__title h2 mb-3">Articles & Blogs</h2>
+            <p class="news__subtitle">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate perspiciatis nihil alias omnis assumenda maxime
+              perferendis delectus voluptates repellendus eos?
+            </p>
+          </div>
+          <!-- grid -->
+          <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+            <!-- grid item 1 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="/almehn/assets/01-MRDrZIyk.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  The Future of Workspaces: How Smart Offices Are
+                  Revolutionizing Productivity
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">22 December, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 2 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="/almehn/assets/01-MRDrZIyk.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Sustainability in Office Fitouts: Reducing Carbon Footprints
+                  One Workspace at a Time
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">01 November, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 3 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="/almehn/assets/02-87ieu_LT.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Office Renovations That Inspire: Transforming Workspaces for
+                  the Modern Business
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">28 August, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 4 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="/almehn/assets/03-BK76cnzP.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Why First Impressions Matter: The Role of Interior Design in
+                  Business Success
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">15 June, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 5 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="/almehn/assets/01-MRDrZIyk.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Choosing the Right Office Flooring: A Guide to Durability,
+                  Aesthetics, and Comfort
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">10 May, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="contact mt-[80px] xl:mt-[150px] relative z-20"
+      >
+        <div
+          class="contact__container container bg-primary mx-auto sm:rounded-[50px] !py-[80px]"
+        >
+          <div class="contact__text max-w-[640px] mx-auto text-center">
+            <h2 class="h2 !text-white mb-4">Get started with us now</h2>
+            <p class="!text-white mb-8 max-w-sm xl:max-w-none mx-auto">
+              "Get in touch with our team to start designing a functional,
+              inspiring environment tailored to your business needs"
+            </p>
+            <button class="btn btn-accent mx-auto">
+              Connect with us <i class="ri-arrow-right-line text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto !px-8">
+          <div class="flex flex-col xl:flex-row xl:gap-[100px]">
+            <div
+              class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+            >
+              <!-- logo -->
+              <a class="flex justify-center xl:justify-start mb-8" href="">
+                <img
+                  src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='Layer_2'%20data-name='Layer%202'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%20366.546%2040.143'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20url(%23linear-gradient);%20}%20.cls-1,%20.cls-2%20{%20stroke:%20%231c75bc;%20stroke-miterlimit:%2010;%20stroke-width:%202px;%20}%20.cls-2%20{%20fill:%20%231c75bc;%20}%20%3c/style%3e%3clinearGradient%20id='linear-gradient'%20x1='228.855'%20y1='20.787'%20x2='229.355'%20y2='20.787'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0'%20stop-color='%231c75bc'/%3e%3cstop%20offset='.024'%20stop-color='%2342839d'/%3e%3cstop%20offset='.058'%20stop-color='%23739477'/%3e%3cstop%20offset='.094'%20stop-color='%239da456'/%3e%3cstop%20offset='.13'%20stop-color='%23c0b03b'/%3e%3cstop%20offset='.166'%20stop-color='%23daba26'/%3e%3cstop%20offset='.203'%20stop-color='%23edc117'/%3e%3cstop%20offset='.241'%20stop-color='%23f9c50e'/%3e%3cstop%20offset='.281'%20stop-color='%23fdc70c'/%3e%3cstop%20offset='.669'%20stop-color='%23f3903f'/%3e%3cstop%20offset='.888'%20stop-color='%23ed683c'/%3e%3cstop%20offset='1'%20stop-color='%23e93e3a'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20id='Layer_1-2'%20data-name='Layer%201'%3e%3cpath%20class='cls-1'%20d='M43.786,24.733l8.558,12.256-2.473,1.754-7.628-10.976H11.487l-7.627,10.976-2.473-1.754,8.539-12.256h33.859ZM35.124,14.913h-16.167L27.041,2.832l8.083,12.082ZM24.831,11.88h4.436l-2.227-3.84-2.209,3.84Z'/%3e%3cpath%20class='cls-2'%20d='M65.412,1.85v32.755h49.063v3.156h-52.219V1.85h3.156Z'/%3e%3cpath%20class='cls-2'%20d='M175.872,15.106v23.637h-2.963v-18.974l-22.304,10.433-22.305-10.433v18.974h-2.963V15.106l25.268,11.817,25.267-11.817ZM175.013,5.514l-24.408,11.433-24.409-11.433,1.245-2.683,23.164,10.836,23.146-10.836,1.262,2.683Z'/%3e%3cpath%20class='cls-2'%20d='M240.166,2.113v3.139h-48.518v10.977h40.154v3.122h-43.276V2.113h51.64ZM192.897,34.902h47.444v3.122h-51.641v-13.922h4.197'/%3e%3cpath%20class='cls-2'%20d='M307.615,1.394l.019,12.52h-54.622l-.018-12.52h3.209l.018,9.311h48.204l-.018-9.311h3.207ZM307.635,23.681l.018,13.624h-3.209l-.018-10.416h-48.204l.018,10.416h-3.209l-.018-13.624h54.622Z'/%3e%3cpath%20class='cls-2'%20d='M362.846,30.168V2.481h2.7v32.86l-45.24-31.738,1.544-2.209,40.996,28.773ZM321.85,14.861l29.458,20.234-1.543,2.21-25.232-17.273v16.186h-2.683V14.861Z'/%3e%3c/g%3e%3c/svg%3e"
+                  alt="logo"
+                  class="w-[180px] h-auto"
+                />
+              </a>
+              <p class="mb-8 text-xl">
+                Reliable solutions for your space, from start to finish
+              </p>
+              <!-- socials -->
+              <ul class="text-primary flex gap-[54px] justify-center">
+                <li>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-linkedin-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
+            >
+              <div class="footer__item">
+                <h3 class="h3 mb-3">Pages</h3>
+                <ul class="flex flex-col gap-4">
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Our Work</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <h3 class="h3 mb-3">Services</h3>
+                <ul class="flex flex-col gap-4">
+                  <li><a href="">Space Planning & Layout Design</a></li>
+                  <li><a href="">Furniture & Fixture Selection</a></li>
+                  <li><a href="">Consultation </a></li>
+                  <li><a href="">Project Management & Execution </a></li>
+                  <li><a href="">Renovation & Remodeling</a></li>
+                </ul>
+              </div>
+              <div class="footer__item max-w-[260px] mx-auto xl:mx-0">
+                <h3 class="h3 mb-3">Contact</h3>
+                <div class="flex flex-col gap-6 text-[20px]">
+                  <p>Red Avenue Building, Garhoud, Dubai</p>
+                  <p>contact@almehn.com</p>
+                  <p>(971) 56 914 3164</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- copyrights -->
+        <p
+          class="footer__copyright text-center text-lg py-10 bg-white xl:border-t"
+        >
+          Copyrights &copy; ALMEHN 2025. All rights reserved
+        </p>
+      </footer>
+
+      <div class="h-[3000px]"></div>
+    </main>
+
+    <!-- cloudinary -->
+     <script src="js/cloudinary.js"></script>
+
+    <!-- scroll reveal js -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

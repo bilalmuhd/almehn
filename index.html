@@ -1,156 +1,728 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALMEHN - Coming Soon</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      :root {
-        --primary-color: #5b3c88; /* Royal Purple */
-        --secondary-color: #37474f; /* Slate Gray */
-        --accent-green: #4caf50; /* Emerald Green */
-        --accent-yellow: #fbc02d; /* Golden Yellow */
-        --background-beige: #e9dac6; /* Soft Beige */
-        --accent-blue: #039be5; /* Azure Blue */  
-      }
-    </style>
+    <title>ALMEHN</title>
+    <!-- CSS -->
+    <link href="./css/input.css" rel="stylesheet" />
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <!--  FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
-  <body class="bg-[var(--background-beige)] text-[var(--secondary-color)]">
-    <!-- Header Section -->
-    <header class="bg-white shadow-md fixed w-full z-50">
-      <div
-        class="container mx-auto px-6 py-4 flex items-center justify-between"
-      >
-        <!-- Logo -->
-        <a href="/"
-          ><img
-            src="./img/logo.svg"
-            alt="company logo"
-            width="200"
-        /></a>
-
-        <!-- Navigation Menu -->
-        
-
-        <!-- Call to Action -->
-        <a
-          href="/contact.html"
-          class=" md:inline-block px-6 py-2 bg-[#017ebc] text-white rounded-lg hover:bg-[#135272]"
-          >Contact</a
-        >
-
-        <!-- Mobile Menu Icon -->
-        
+  <body class="bg-gray-100">
+    <!-- HEADER -->
+    <header class="sticky top-0 h-[90px] shadow-xl z-30 bg-white">
+      <div class="container mx-auto flex justify-between h-full items-center">
+        <!-- logo -->
+        <a href="#">
+          <img
+            src="/assets/logo_nav.svg"
+            alt="logo"
+            height="40px"
+            width="160px"
+          />
+        </a>
+        <!-- NAV -->
+        <nav>
+          <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+            <i class="ri-menu-4-fill text-4xl text-primary"></i>
+          </div>
+          <ul
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            id="nav_menu"
+          >
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section
-      class="h-screen flex flex-col justify-center items-center"
-    >
-      <h1
-        class="text-4xl md:text-6xl font-extrabold text-[var(--primary-color)] text-center"
-      >
-      <span class="block text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-blue)] text-transparent bg-clip-text">
-        Transforming Workspaces,<br />
-        Elevating Experiences</span>
-      </h1>
-      <p class="mt-4 text-lg text-[var(--secondary-color)] text-center">
-        ALMEHN specializes in innovative office renovations and designs.
-        Launching soon!
-      </p>
+    <!-- page wrapper -->
+    <main class="max-w-[1920px] mx-auto bg-white overflow-hidden">
+      <!-- grid img -->
+      <div
+        class="xl:bg-grid xl:bg-center xl:bg-repeat-y fixed top-0 bottom-0 left-0 right-0 z-10"
+      ></div>
 
-      <a
-        href="contact.html"
-        class="mt-8 px-6 py-3 bg-[#017ebc] text-white rounded-lg shadow-lg hover:bg-[#135272] transition-colors duration-300"
-        >Notify Me When We Launch</a
+      <!-- HERO -->
+      <section
+        class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20"
       >
-    </section>
+        <div
+          class="container mx-auto h-full flex items-center justify-center xl:justify-start"
+        >
+          <!-- text -->
+          <div
+            class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start"
+          >
+            <h1
+              class="h1 text-[#B08D57] mb-8 drop-shadow-[10px_10px_10px_rgba(211,187,160,1)]"
+            >
+              Revolutionizing Workspaces, Redefining Possibilities
+            </h1>
+            <p
+              class="mb-8 text-[#F5F5F5] !drop-shadow-[10px_10px_2 0px_rgba(0, 0, 0, 0.8)]"
+            >
+              At Almehn, we don't just build offices we craft environments that
+              inspire innovation, enhance productivity, and reflect your brand's
+              vision. Get ready for a workspace transformation like never
+              before.
+            </p>
 
-    <!-- Services Section -->
-    <section class="py-16 bg-white">
-      <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold text-[var(--primary-color)]">
-          Our Expertise at a Glance
-        </h2>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Service 1 -->
-          <div class="p-6 bg-[var(--background-beige)] rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-[var(--secondary-color)]">
-              Renovation & Fitouts
-            </h3>
-            <p class="text-[var(--secondary-color)] mt-2">
-              Reimagine your workspace with tailored solutions.
-            </p>
-          </div>
-          <!-- Service 2 -->
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[var(--secondary-color)]">
-              Civil & MEP Works
-            </h3>
-            <p class="text-[var(--secondary-color)] mt-2">
-              Building robust, sustainable foundations.
-            </p>
-          </div>
-          <!-- Service 3 -->
-          <div class="p-6 bg-[var(--background-beige)] rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-[var(--secondary-color)]">
-              Networking & Cabling
-            </h3>
-            <p class="text-[var(--secondary-color)] mt-2">
-              Seamless connectivity for modern businesses.
-            </p>
-          </div>
-          <!-- Service 4 -->
-          <div class="p-6 ">
-            <h3 class="text-xl font-semibold text-[var(--secondary-color)]">
-              Drawing & Designing
-            </h3>
-            <p class="text-[var(--secondary-color)] mt-2">
-              Turning visions into blueprints of success.
-            </p>
-          </div>
-          <!-- Service 5 -->
-          <div class="p-6 bg-[var(--background-beige)] rounded-lg shadow-md">
-            <h3 class="text-xl font-semibold text-[var(--secondary-color)]">
-              Furniture & Flooring
-            </h3>
-            <p class="text-[var(--secondary-color)] mt-2">
-              Functional aesthetics for every workspace.
-            </p>
+            <button class="btn btn-primary mx-auto xl:mx-0">
+              Get Started
+              <i class="ri-arrow-right-line text-accent"></i>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <footer class="py-12 bg-[var(--secondary-color)] text-white">
-      <div class="container mx-auto text-center">
-        <h3 class="text-2xl font-bold">Get in Touch</h3>
-        <p class="mt-4">
-          Email:
-          <a href="mailto:contact@almehn.com" class="underline"
-            >contact@almehn.com</a
-          >
-        </p>
-        <p>
-          Phone: <a href="tel:+971569143164" class="underline">+971569143164</a>
-        </p>
-        <div class="mt-6">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="px-4 py-2 rounded-md text-[var(--secondary-color)]"
-          />
-          <button
-            class="ml-2 px-4 py-2 bg-[var(--accent-blue)] text-white rounded-md hover:bg-[var(--accent-yellow)] transition-colors duration-300"
-          >
-            Subscribe
-          </button>
+      <!-- STEPS -->
+      <section class="steps mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto">
+          <!-- grid items -->
+          <div class="grid grid-cols-1 gap-12 xl:grid-cols-3">
+            <!-- step 1 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-compasses-2-fill text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Discovery & Consultation</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                We begin by understanding your vision, needs, and challenges to
+                create a tailored workspace solution.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 2 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-pencil-ruler-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Concept & Design</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                Our expert designers craft innovative layouts and visuals that
+                align with your brand identity and functionality goals.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 3 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-calendar-check-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Planning & Coordination</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                We meticulously plan every detail, ensuring a smooth workflow,
+                optimized timelines, and minimal disruptions.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 4 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-tools-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Execution & Build</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                Our skilled team brings the vision to life, executing fit-outs,
+                installations, and upgrades with precision and quality.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+            <!-- step 5 -->
+            <div class="steps__step text-center">
+              <div class="mb-4">
+                <i class="ri-shake-hands-line text-5xl text-accent"></i>
+              </div>
+              <h3 class="h3 mb-5">Handover & Support</h3>
+              <p class="mb-5 max-w-md mx-auto">
+                Your transformed space is ready! We ensure a flawless handover
+                and provide ongoing support for any future needs.
+              </p>
+              <a href="#" class="font-medium flex justify-center gap-2"
+                >Read more
+                <i class="ri-arrow-right-line text-accent"></i>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </footer>
-    
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about mt-[80px] xl:mt-[200px] relative z-20">
+        <div class="container mx-auto xl:px-0">
+          <div
+            class="flex flex-col xl:flex-row text-center xl:text-left justify-between items-center gap-8 xl:gap-[74px]"
+          >
+            <!-- text -->
+            <div
+              class="about__text flex-1 order-2 xl:order-none max-w-xl xl:max-w-[610px] flex flex-col items-center xl:items-start gap-8"
+            >
+              <h2 class="h2">Innovating Workspaces, Elevating Experiences</h2>
+              <p>
+                At Almehn, we believe that every workspace has the potential to
+                inspire productivity and success. Since 2016, we have been
+                transforming offices with cutting-edge renovation, fit-outs, and
+                design solutions. Our expertise spans civil and MEP works,
+                networking and cabling, bespoke furniture, and meticulous space
+                planning. Driven by innovation and excellence, we partner with
+                businesses to create work environments that are functional,
+                aesthetic, and built for growth. Whether it's a modern office
+                upgrade or a complete transformation, Almehn delivers seamless
+                execution with a commitment to quality and client satisfaction.
+              </p>
+              <!-- contact phone -->
+              <div
+                class="flex items-center justify-center xl:justify-start gap-4"
+              >
+                <div
+                  class="bg-accent/15 w-[93px] h-[93px] rounded-full flex justify-center items-center"
+                >
+                  <i class="ri-phone-fill text-accent text-4xl"></i>
+                </div>
+                <div class="text-left">
+                  <div class="text-2xl font-bold">+971 56 9143164</div>
+                  <div>Call us</div>
+                </div>
+              </div>
+              <button class="btn btn-primary">
+                Get free estimate
+                <i class="ri-arrow-right-line text-accent"></i>
+              </button>
+            </div>
+
+            <!-- image -->
+            <div
+              class="about__img order-1 xl:order-none max-w-[453px] mx-auto xl:max-w-none xl:mx-0"
+            >
+              <img
+                class="rounded-bl-[290px]"
+                src="assets/office_images/office_design_3.jpg"
+                alt="About"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonial mt-[80px] xl:mt-[200px] relative z-20">
+        <div
+          class="testimonial__bg container mx-auto bg-accent-secondary rounded-[70px] px-6"
+        >
+          <div class="flex flex-col items-center pt-[88px] pb-[110px]">
+            <h2 class="testimonial__title h2 mb-9 text-center">
+              What clients say
+            </h2>
+            <!-- slider -->
+            <div class="w-full">
+              <div class="testimonial__slider swiper h-[400px]">
+                <div class="swiper-wrapper">
+                  <!-- slide 1 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[20px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/01.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Sherin Ralph</h3>
+                          <div>Dubai, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide 2 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/02.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Marianne Habib</h3>
+                          <div>Nshama, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide 3 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/03.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Afzal Khan</h3>
+                          <div>Media City, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- slide 4 -->
+                  <div class="swiper-slide">
+                    <!-- item -->
+                    <div
+                      class="testimonial__item w-full max-w-[450px] h-[340px] bg-white rounded-[30px] flex flex-col justify-center p-9 mx-auto"
+                    >
+                      <div class="flex gap-4 mb-6">
+                        <img
+                          src="assets/testimonial/04.png"
+                          alt="testimonial image"
+                        />
+                        <div>
+                          <h3 class="h3">Maricar B. Tolero</h3>
+                          <div>Internet City, UAE</div>
+                        </div>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quam, facilis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- swiper pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRANDS -->
+      <section class="brands mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto">
+          <div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-6 gap-12 justify-center items-center">
+            <img class="brands__img" src="assets/brands/01.svg" alt="clients" />
+            <img class="brands__img" src="assets/brands/02.svg" alt="clients" />
+            <img class="brands__img" src="assets/brands/03.svg" alt="clients" />
+            <img class="brands__img" src="assets/brands/04.svg" alt="clients" />
+            <img class="brands__img" src="assets/brands/05.svg" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="assets/brands/emaar-logo.svg" alt="clients" />
+            <img class="brands__img w-40 h-auto" src="assets/brands/Atb_color_logo.svg" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="assets/brands/telenor-logo-icon.svg" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="assets/brands/weber-1.svg" alt="clients" />
+            <img class="brands__img w-48 h-auto" src="assets/brands/tata-1.svg" alt="clients" />
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="work mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto xl:!px-0">
+          <!-- text -->
+          <div class="text-center mb-24">
+            <h2 class="work__title h2 mb-4">Follow Our Work</h2>
+            <p class="work__subtitle max-w-3xl mx-auto">
+              At Almehn, we take pride in crafting workspaces that align with
+              our clients' business goals. Whether it's a sleek corporate office
+              or a creative hub, we deliver excellence with every project.
+            </p>
+          </div>
+          <!-- grid -->
+          <div
+            class="work__grid grid grid-cols-1 xl:grid-cols-2 gap-x-[104px] gap-y-[56px]"
+          >
+            <!-- item 1 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-tr-[80px]" src="https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/eedb5nwwfz0xqz96tin7?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Zenith Tech Solutions</h3>
+                  <p>Smart Office Transformation</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-tl-[80px]" src="https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/j0rmgzin3lmpnyiyniwr?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Al Noor Financial - Premium Corporate Fit-Out</h3>
+                  <p>Finance & Investment</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-br-[80px]" src="http://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/j098ydrwbkw8rk91nkqb?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Skywave Media - Creative Workspace Revamp</h3>
+                  <p>Advertising & Media</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- item 4 -->
+            <div class="w-full max-w-[548px] h-full mx-auto">
+              <img class="mb-6 rounded-bl-[80px]" src="https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto,w_552,h_525/cqpyckivojxxz3hy0grm?_a=BAMCkGAX0" alt="work" />
+              <div class="flex justify-between items-center w-full">
+                <div>
+                  <h3 class="h3">Blue Horizon Hotels - Hospitality Office Overhaul</h3>
+                  <p>Hospitality & Tourism</p>
+                </div>
+                <button
+                  class="bg-accent-secondary hover:bg-accent/20 w-[70px] h-[70px] rounded-full"
+                >
+                  <i
+                    class="ri-arrow-right-s-line text-3xl text-primary pl-1"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section
+        class="stats mt-[80px] xl:mt-[150px] relative z-20 bg-accent-secondary py-[80px] xl:py-[150px]"
+      >
+        <div class="container mx-auto">
+          <!-- grid -->
+          <div class="grid grid-cols-1 xl:grid-cols-4 gap-12">
+            <!-- grid item -->
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">08</h3>
+              <p>Years Of Experience</p>
+            </div>
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">50+</h3>
+              <p>Successful Projects Completed/p></p>
+            </div>
+
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">95%</h3>
+              <p>Client Satisfaction Rate Based on Feedback</p>
+            </div>
+            <div class="stats__item text-center xl:border-r xl:border-accent">
+              <h3 class="h1 font-primary !text-accent">20+</h3>
+              <p>Commercial Sectors Served, from Tech to Hospitality</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <section class="news mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto !px-0">
+          <!-- text -->
+          <div class="max-w-[810px] mx-auto text-center mb-[52px]">
+            <h2 class="news__title h2 mb-3">Articles & Blogs</h2>
+            <p class="news__subtitle">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Cupiditate perspiciatis nihil alias omnis assumenda maxime
+              perferendis delectus voluptates repellendus eos?
+            </p>
+          </div>
+          <!-- grid -->
+          <div class="news__grid grid grid-cols-1 xl:grid-cols-3 gap-[27px]">
+            <!-- grid item 1 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="assets/news/01.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  The Future of Workspaces: How Smart Offices Are
+                  Revolutionizing Productivity
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">22 December, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 2 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="assets/news/01.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Sustainability in Office Fitouts: Reducing Carbon Footprints
+                  One Workspace at a Time
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">01 November, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 3 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="assets/news/02.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Office Renovations That Inspire: Transforming Workspaces for
+                  the Modern Business
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">28 August, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 4 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="assets/news/03.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Why First Impressions Matter: The Role of Interior Design in
+                  Business Success
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">15 June, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- grid item 5 -->
+            <div
+              class="news__item w-full max-w-[382px] h-[560px] border border-primary/20 rounded-[62px] p-[20px] hover:bg-accent-secondary transition-all group cursor-pointer mx-auto xl:mx-0"
+              onclick="toggleText(this)"
+            >
+              <img class="mb-5" src="assets/news/01.png" alt="news" />
+              <div class="flex flex-col gap-[20px]">
+                <h3 class="h3 line-clamp-3 transition-all duration-300">
+                  Choosing the Right Office Flooring: A Guide to Durability,
+                  Aesthetics, and Comfort
+                </h3>
+                <div class="flex items-center justify-between">
+                  <p class="text-base">10 May, 2024</p>
+                  <button
+                    class="bg-accent-secondary w-[52px] h-[52px] rounded-full group-hover:bg-white transition-all"
+                  >
+                    <i
+                      class="ri-arrow-right-s-line text-3xl text-pretty pl-1"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section
+        id="contact"
+        class="contact mt-[80px] xl:mt-[150px] relative z-20"
+      >
+        <div
+          class="contact__container container bg-primary mx-auto sm:rounded-[50px] !py-[80px]"
+        >
+          <div class="contact__text max-w-[640px] mx-auto text-center">
+            <h2 class="h2 !text-white mb-4">Get started with us now</h2>
+            <p class="!text-white mb-8 max-w-sm xl:max-w-none mx-auto">
+              "Get in touch with our team to start designing a functional,
+              inspiring environment tailored to your business needs"
+            </p>
+            <button class="btn btn-accent mx-auto">
+              Connect with us <i class="ri-arrow-right-line text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer mt-[80px] xl:mt-[150px] relative z-20">
+        <div class="container mx-auto !px-8">
+          <div class="flex flex-col xl:flex-row xl:gap-[100px]">
+            <div
+              class="footer__item w-full max-w-[400px] mx-auto mb-8 text-center xl:text-left"
+            >
+              <!-- logo -->
+              <a class="flex justify-center xl:justify-start mb-8" href="">
+                <img
+                  src="assets/logo_nav.svg"
+                  alt="logo"
+                  class="w-[180px] h-auto"
+                />
+              </a>
+              <p class="mb-8 text-xl">
+                Reliable solutions for your space, from start to finish
+              </p>
+              <!-- socials -->
+              <ul class="text-primary flex gap-[54px] justify-center">
+                <li>
+                  <a href=""><i class="ri-facebook-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-twitter-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-linkedin-fill"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="ri-instagram-fill"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex-1 flex flex-col xl:flex-row text-center xl:text-left gap-12 xl:gap-[100px] xl:justify-end"
+            >
+              <div class="footer__item">
+                <h3 class="h3 mb-3">Pages</h3>
+                <ul class="flex flex-col gap-4">
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Testimonials</a></li>
+                  <li><a href="">Our Work</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <h3 class="h3 mb-3">Services</h3>
+                <ul class="flex flex-col gap-4">
+                  <li><a href="">Space Planning & Layout Design</a></li>
+                  <li><a href="">Furniture & Fixture Selection</a></li>
+                  <li><a href="">Consultation </a></li>
+                  <li><a href="">Project Management & Execution </a></li>
+                  <li><a href="">Renovation & Remodeling</a></li>
+                </ul>
+              </div>
+              <div class="footer__item max-w-[260px] mx-auto xl:mx-0">
+                <h3 class="h3 mb-3">Contact</h3>
+                <div class="flex flex-col gap-6 text-[20px]">
+                  <p>Red Avenue Building, Garhoud, Dubai</p>
+                  <p>contact@almehn.com</p>
+                  <p>(971) 56 914 3164</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- copyrights -->
+        <p
+          class="footer__copyright text-center text-lg py-10 bg-white xl:border-t"
+        >
+          Copyrights &copy; ALMEHN 2025. All rights reserved
+        </p>
+      </footer>
+
+      <div class="h-[3000px]"></div>
+    </main>
+
+    <!-- cloudinary -->
+     <script src="js/cloudinary.js"></script>
+
+    <!-- scroll reveal js -->
+    <script src="js/scrollreveal.min.js"></script>
+    <!-- swiper -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
   </body>
 </html>

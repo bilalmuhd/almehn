@@ -1,0 +1,191 @@
+------------------
+LINKS
+------------------
+Home
+About
+Testimonials
+Our Work
+News
+Contact
+
+------------------
+HERO
+------------------
+Title: Let Your Home Be Unique
+Subtitle: There are many variations of the passages of lorem Ipsum from available,variations of the passages.
+Btn text: Get free estimation
+
+------------------
+STEPS
+------------------
+Title 1: Project Planning
+Title 2: Gaining Materials
+Title 3: Project Execution
+
+Subtitle x3: There are many variations of the passages of lorem Ipsum from available, majority.
+Btn text: Read more
+
+------------------
+ABOUT
+------------------
+Title: We Create The Art Of Stylish Living Stylishly
+Subtitle: It is a long established fact that a reader will be distracted by the of readable content of a page 
+when lookings at its layouts the points of using 
+that it has a more-or-less normal.
+
+------------------
+TESTIMONIALS
+------------------
+Title: What clients say
+
+Nattasha Mith
+Greenville, USA
+Lorem Ipsum is simply dummy 
+text of the typesetting industry. 
+Ipsum has been.
+
+Jessica White
+Oak Ridge, USA
+Lorem Ipsum is simply dummy 
+text of the typesetting industry. 
+Ipsum has been.
+
+Mike Davis
+Berlin, Germany
+Lorem Ipsum is simply dummy 
+text of the typesetting industry. 
+Ipsum has been.
+
+Olivia Wilson
+Blue Ridge, France
+Lorem Ipsum is simply dummy 
+text of the typesetting industry. 
+Ipsum has been.
+
+------------------
+WORK
+------------------
+Title: Follow Our Projects
+Subtitle: It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.
+
+------------------
+NEWS
+------------------
+Title: Articles & News
+Subtitle: It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.
+
+Item 1:
+Title: Let’s Get Solution For Building Construction Work
+Date: 22 June,2024
+
+Item 2:
+Title: Low Cost Latest Invented Interior Designing
+Ideas.
+Date: 24 June,2024
+
+Item 3:
+Title: Best For Any Office & Business Interior 
+Solution
+Date: 28 June,2024
+
+------------------
+CONTACT
+------------------
+Title: Do you want to join Interno?
+Subtitle: It is a long established fact will be distracted.
+
+------------------
+FOOTER
+------------------
+Logo
+Subtitle: It is a long established fact that a reader will be distracted lookings.
+Socials
+
+Pages
+About Us
+Testimonials
+Our Work
+News
+Contact
+
+Services
+Kitchen
+Living Area
+Bathroom
+Bedroom
+
+Contact
+55 East Birchwood Ave. Brooklyn, New York 11201
+contact@interno.com
+(123) 456 - 7890
+
+------------------
+COPYRIGHT
+------------------
+Copyright © Interno 2024. All rights reserved.
+
+
+------------------
+SERVICES
+------------------
+1. Space Planning & Layout Design  
+   We optimize your space for functionality and flow, ensuring every inch works for your business.
+
+2. Concept Development & Design  
+   From concept to reality, we create innovative and tailored design solutions that align with your brand.
+
+3. Furniture & Fixture Selection  
+   We provide stylish, durable, and functional furniture solutions that fit your office or commercial space.
+
+4. Lighting Design & Consultation  
+   We craft lighting plans that enhance productivity, ambiance, and energy efficiency in your space.
+
+5. Project Management & Execution  
+   From planning to final installation, we manage the entire design process, ensuring everything runs smoothly and on schedule.
+
+6. Renovation & Remodeling  
+   Revitalize your existing space with expert renovations that refresh your environment and improve functionality.
+
+7. Brand Integration & Custom Design  
+   We seamlessly incorporate your brand identity into the design, creating a cohesive and branded environment that reflects your company's values.
+
+8. Sustainability & Eco-Friendly Design  
+   We offer sustainable design solutions, using eco-friendly materials and energy-efficient systems to create spaces that are both stylish and environmentally responsible.
+
+
+9. Acoustic Design & Soundproofing  
+   We create noise-controlled environments with acoustic treatments, ensuring comfort and privacy in your commercial space.
+
+10. Technology Integration & Smart Solutions  
+   We integrate cutting-edge technology and smart systems into your space, enhancing productivity and connectivity with seamless, user-friendly solutions.
+
+11. Custom Millwork & Joinery  
+   We craft bespoke cabinetry, shelving, and other custom woodwork that perfectly fit your space and design aesthetic.
+
+12. Maintenance & Post-Installation Support  
+   After the project is complete, we offer ongoing maintenance and support to ensure your space stays in top condition and continues to function smoothly.
+
+13. Color Consultation & Material Selection  
+   We help you choose the perfect color palette and materials that complement your brand and create the desired atmosphere in your space.
+
+14. Artwork & Decor Sourcing  
+   We source unique artwork, sculptures, and decorative elements that enhance your space, giving it personality and a finished, cohesive look.
+
+15. Virtual Design & 3D Visualization  
+   We provide detailed 3D renderings and virtual tours, giving you a clear preview of your space before the design is brought to life.
+
+16. Space Optimization & Storage Solutions  
+   We design efficient storage solutions that maximize your space, helping to keep your environment organized and clutter-free.
+
+17. Workspace Ergonomics Consulting  
+   We assess and design workspaces with ergonomics in mind, ensuring your team’s comfort and productivity are optimized.
+
+18. Facility Design for Special Needs  
+   We offer specialized design solutions for spaces that need to accommodate accessibility requirements, ensuring an inclusive environment for all.
+
+19. Fire & Safety Compliance Design  
+   We ensure your space meets all local fire and safety regulations, incorporating safe layouts and necessary safety features.
+
+20. Retail & Commercial Display Design  
+   We create eye-catching, functional display setups that enhance customer experience and drive engagement in retail and other commercial spaces.
+

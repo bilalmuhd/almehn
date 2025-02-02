@@ -1,0 +1,44 @@
+
+// for hero with background blurred
+
+<section class="hero h-[640px] xl:h-[840px] bg-hero bg-center lg:bg-cover bg-no-repeat bg-fixed xl:rounded-bl-[290px] relative z-20">
+  <div class="container mx-auto h-full flex items-center justify-center xl:justify-start">
+    <!-- Text container with position relative to hold background -->
+    <div class="relative w-full">
+      <!-- Background blur only behind text -->
+      <div class="absolute inset-0 backdrop-blur-lg z-0" style="clip-path: inset(0 0 0 0);"></div>
+
+      <!-- Text content -->
+      <div class="hero__text w-[567px] flex flex-col items-center text-center xl:text-left lg:items-start relative z-10">
+        <h1 class="h1 !text-[#B08D57] mb-8">
+          Revolutionizing Workspaces, Redefining Possibilities
+        </h1>
+        <p class="mb-8 text-[#F1E4D1]">
+          At Almehn, we don't just build offices—we craft environments that inspire innovation, enhance productivity, and reflect your brand's vision. Get ready for a workspace transformation like never before.
+        </p>
+        <button class="btn btn-primary mx-auto xl:mx-0">
+          Get Started
+          <i class="ri-arrow-right-line text-accent"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+// interesting colors 
+White or Off-White (#FFFFFF or #F5F5F5): These colors will stand out against darker or mid-tone browns and greys, making your text readable. Off-white may be softer and more elegant than pure white, so it could blend better with a more natural aesthetic.
+Light Grey (#D3D3D3): A light grey could create enough contrast without feeling too stark. It’s a subtler option but still legible.
+Beige or Cream (#F1E4D1): If you want to keep the text warm and aligned with the natural tones of the background, a soft beige or cream could look good. It provides contrast but still feels warm and neutral.
+Warm Taupe (#B98B6A): For a more sophisticated and harmonious look, a warm taupe or light brown with some yellow undertones could stand out well without clashing with the background.
+Charcoal or Dark Grey (#333333 or #444444): If you want a darker text that’s still readable on lighter grey or brown backgrounds, charcoal or dark grey can offer good contrast while feeling less harsh than black.
+Soft Gold or Bronze (#B08D57 or #C38A58): If you want a touch of elegance or luxury, a soft metallic gold or bronze could contrast beautifully with browns and greys without being too bold or distracting.
+
+
+// steel colors
+#e0e5e5	(224,229,229)
+#ced3d4	(206,211,212)
+#c0c6c7	(192,198,199)
+#a8b0b2	(168,176,178)
+#99a3a3	(153,163,163)
