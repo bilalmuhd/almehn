@@ -1,3 +1,4 @@
+import "../css/input.css";
 const navTriggerBtn = document.querySelector("#nav_trigger_btn");
 const navMenu = document.querySelector("#nav_menu");
 
@@ -104,4 +105,3 @@ sr.reveal(".footer__item", {
   interval: 100,
 });
 sr.reveal(".footer__copyright");
-
