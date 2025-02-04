@@ -37,11 +37,11 @@ html {
     background-image: url("https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/hbyfogfnx0ttxspgif7u?_a=BAMCkGAX0");
   }
   .bg-grid {
-    background-image: url("../assets/grid.png");
+    background-image: url("../../assets/grid.png");
   }
   @media (min-width: theme(--breakpoint-xl)) {
     .xl\:bg-grid {
-      background-image: url("../assets/grid.png");
+      background-image: url("../../assets/grid.png");
     }
   }
 }

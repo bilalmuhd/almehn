@@ -1,4 +1,4 @@
-import "../src/input.css"
+// import "../src/input.css"
 const navTriggerBtn = document.querySelector("#nav_trigger_btn");
 const navMenu = document.querySelector("#nav_menu");
 
