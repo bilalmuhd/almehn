@@ -1,5 +1,7 @@
-import { v2 as cloudinary } from "cloudinary";
-import dotenv from "dotenv";
+const { v2: cloudinary } = require('cloudinary');
+const dotenv = require('dotenv');
+dotenv.config();
+
 dotenv.config();
 
 cloudinary.config({
@@ -10,7 +12,7 @@ cloudinary.config({
 
 (async function () {
   const results = await cloudinary.uploader.upload(
-    "../assets/office_images/another_design 3.jpg"
+    "../assets/office_images/plan 4.jpg"
   );
   console.log(results);
   const url = cloudinary.url(results.public_id, {
@@ -20,7 +22,6 @@ cloudinary.config({
         fetch_format: "auto",
       },
       {
-        width: 552,
         crop: "fill",
         gravity: "auto",
       },

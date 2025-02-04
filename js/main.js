@@ -105,3 +105,69 @@ sr.reveal(".footer__item", {
   interval: 100,
 });
 sr.reveal(".footer__copyright");
+
+// call to action
+function scrollToForm() {
+  const form = document.getElementById("contact-form-div");
+  if (form) {
+      form.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+// Make the function available globally
+window.scrollToForm = scrollToForm;
+
+
+// form submission
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const successMessage = document.getElementById("success-message");
+
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent page reload
+
+    const formData = new FormData(form);
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    submitButton.innerText = "Sending...";
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        successMessage.classList.remove("hidden"); // Show success message
+        form.reset(); // Clear form
+      } else {
+        alert("Oops! Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Network error. Please check your internet connection.");
+    }
+
+    submitButton.disabled = false;
+    submitButton.innerText = "Send Message";
+  });
+});
+
+
+// nav scroll bg change
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbar = document.getElementById("navbar");
+  const originalHeight = navbar.offsetHeight;
+
+  window.addEventListener("scroll", function () {
+      if (window.scrollY > 50) {
+          navbar.classList.add("bg-white/70", "backdrop-blur-md");
+          navbar.style.height = `${originalHeight * 0.85}px`;
+      } else {
+          navbar.classList.remove("bg-white/70", "backdrop-blur-md");
+          navbar.style.height = `${originalHeight}px`;
+      }
+  });
+});

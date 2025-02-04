@@ -36,6 +36,9 @@ html {
   .bg-hero {
     background-image: url("https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/hbyfogfnx0ttxspgif7u?_a=BAMCkGAX0");
   }
+  .bg-hero-contact {
+    background-image: url("https://res.cloudinary.com/dhant9mij/image/upload/f_auto,q_auto/c_fill,g_auto/fzqyxecj89djkttbv6ow?_a=BAMCkGAX0");
+  }
 
   
   .bg-grid {
