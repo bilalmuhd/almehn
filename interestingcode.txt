@@ -43,3 +43,15 @@ Soft Gold or Bronze (#B08D57 or #C38A58): If you want a touch of elegance or lux
 #a8b0b2	(168,176,178)
 #99a3a3	(153,163,163)
 text-[#B08D57]
+
+
+<style>
+      :root {
+        --primary-color: #5b3c88; /* Royal Purple */
+        --secondary-color: #37474f; /* Slate Gray */
+        --accent-green: #4caf50; /* Emerald Green */
+        --accent-yellow: #fbc02d; /* Golden Yellow */
+        --background-beige: #e9dac6; /* Soft Beige */
+        --accent-blue: #039be5; /* Azure Blue */
+      }
+    </style>
