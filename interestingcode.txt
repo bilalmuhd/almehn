@@ -42,3 +42,4 @@ Soft Gold or Bronze (#B08D57 or #C38A58): If you want a touch of elegance or lux
 #c0c6c7	(192,198,199)
 #a8b0b2	(168,176,178)
 #99a3a3	(153,163,163)
+text-[#B08D57]
