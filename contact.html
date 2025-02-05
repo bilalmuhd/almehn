@@ -21,8 +21,10 @@
   </head>
   <body class="bg-gray-100">
     <!-- HEADER -->
-    <header id="navbar" class="sticky top-0 h-[90px] shadow-xl z-30 bg-white transition-all duration-300">
-      
+    <header
+      id="navbar"
+      class="sticky top-0 h-[90px] shadow-xl z-30 bg-white transition-all duration-300"
+    >
       <div class="container mx-auto flex justify-between h-full items-center">
         <!-- logo -->
         <a href="./">
@@ -39,7 +41,7 @@
             <i class="ri-menu-4-fill text-4xl text-primary"></i>
           </div>
           <ul
-            class="fixed w-full h-0 p-0 bg-white overflow-hidden  top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
+            class="fixed w-full h-0 p-0 bg-white overflow-hidden top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300"
             id="nav_menu"
           >
             <li><a href="index.html">Home</a></li>
@@ -75,46 +77,44 @@
 
       <!-- Contact Info & Social -->
       <section class="py-16 relative z-20">
-        <div class="container mx-auto grid md:grid-cols-2 gap-12">
+        <div class="container mx-auto flex flex-col justify-between lg:flex-row gap-12">
           <!-- Contact Info -->
-          <div class="text-center md:text-left">
+          <div class="text-center bg-white p-8 rounded-[30px] shadow-lg lg:min-w-[600px]">
             <h2 class="h2 mb-8">Contact Information</h2>
             <div class="space-y-6">
               <div
-                class="flex items-center justify-center md:justify-start gap-4"
+                class="flex items-center gap-4"
               >
                 <div
                   class="bg-accent/15 w-[60px] h-[60px] rounded-full flex justify-center items-center"
                 >
                   <i class="ri-map-pin-line text-accent text-2xl"></i>
                 </div>
-                <div>
+                <div class="text-center flex-1">
                   <h3 class="font-bold">Address</h3>
                   <p>Red Avenue Building, Garhoud, Dubai</p>
                 </div>
               </div>
               <div
-                class="flex items-center justify-center md:justify-start gap-4"
+                class="flex items-center gap-4 mt-10"
               >
                 <div
                   class="bg-accent/15 w-[60px] h-[60px] rounded-full flex justify-center items-center"
                 >
                   <i class="ri-phone-line text-accent text-2xl"></i>
                 </div>
-                <div>
+                <div class="text-center flex-1">
                   <h3 class="font-bold">Phone</h3>
                   <p>(971) 56 914 3164</p>
                 </div>
               </div>
-              <div
-                class="flex items-center justify-center md:justify-start gap-4"
-              >
+              <div class="flex items-center gap-4 mt-10">
                 <div
                   class="bg-accent/15 w-[60px] h-[60px] rounded-full flex justify-center items-center"
                 >
                   <i class="ri-mail-line text-accent text-2xl"></i>
                 </div>
-                <div>
+                <div class="text-center flex-1">
                   <h3 class="font-bold">Email</h3>
                   <p>contact@almehn.com</p>
                 </div>
@@ -141,7 +141,10 @@
           </div>
 
           <!-- Contact Form -->
-          <div id="contact-form-div" class="bg-white p-8 rounded-[30px] shadow-lg">
+            <div
+            id="contact-form-div"
+            class="bg-white p-8 rounded-[30px] shadow-lg lg:min-w-[600px]"
+            >
             <h2 class="h2 mb-8 text-center md:text-left">Send us a Message</h2>
             <form
               id="contact-form"
