@@ -1,2 +1,2 @@
-# ALMEHN
-Repository for almehn.com website
+# Workspace Management website
+Repository for company website
